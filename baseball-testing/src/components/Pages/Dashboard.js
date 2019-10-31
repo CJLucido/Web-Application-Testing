@@ -31,6 +31,11 @@ export default function Dashboard (){
         }
     }
 
+    const handleHit = () => {
+        setNumOfBalls(0) 
+        setNumOfStrikes(0)
+    }
+
     console.log("this is number of strikes", numOfStrikes)
     console.log("this is number of balls", numOfBalls)
     return (
@@ -39,7 +44,7 @@ export default function Dashboard (){
             <button name='strikeBtn' onClick={()=>handleStrike()} data-testid="strikeBtn">Strike</button>
             <button name='ballBtn' onClick={()=>handleBall()} data-testid="ballBtn">Ball</button>
             <button name='foulBtn' onClick={() => handleFoul()} data-testid="foulBtn">Foul</button>
-            <button name='hitBtn' data-testid="hitBtn">Hit</button>
+            <button name='hitBtn' onClick={()=>handleHit()} data-testid="hitBtn">Hit</button>
         
         
         </div>
