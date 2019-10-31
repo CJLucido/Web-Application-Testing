@@ -4,12 +4,14 @@ import App from "../../App"
 
 
 
-it('renders 4 buttons', () => {
+it('renders 5 buttons', () => {
     const {getByTestId} = render(<App />)
 
     getByTestId( "strikeBtn")
     getByTestId("ballBtn")
     getByTestId("foulBtn")
     getByTestId( "hitBtn")
+    getByTestId( "errorBtn")
+
 })
 

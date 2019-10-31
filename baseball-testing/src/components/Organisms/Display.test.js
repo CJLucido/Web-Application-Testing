@@ -19,3 +19,11 @@ it('checks for at-Bat header', ()=> {
     const {getByTestId, getByText} = render(<App />)
     getByTestId('atBatTitle') && getByText("At Bat")
 })
+it('checks for hits display',()=>{
+    const {getByTestId} = render(<App/>)
+    getByTestId('hits-display')
+})
+it('checks for errors display',()=>{
+    const {getByTestId} = render(<App/>)
+    getByTestId('errors-display')
+})
