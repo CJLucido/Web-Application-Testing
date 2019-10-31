@@ -7,7 +7,7 @@ export default function Dashboard (){
     const [numOfBalls, setNumOfBalls] = useState(0)
 
      const handleStrike = () => {
-        if(numOfStrikes === 3){
+        if(numOfStrikes === 2){
             setNumOfStrikes(0)
         }else{
         setNumOfStrikes(numOfStrikes + 1)
@@ -24,7 +24,7 @@ export default function Dashboard (){
     }
 
     const handleBall = () => {
-        if(numOfBalls === 4){
+        if(numOfBalls === 3){
             setNumOfBalls(0)
         }else {
             setNumOfBalls(numOfBalls + 1)
