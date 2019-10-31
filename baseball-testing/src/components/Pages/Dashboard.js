@@ -12,6 +12,7 @@ export default function Dashboard (){
      const handleStrike = () => {
         if(numOfStrikes === 2){
             setNumOfStrikes(0)
+            setNumOfBalls(0)
         }else{
         setNumOfStrikes(numOfStrikes + 1)
         }
@@ -29,6 +30,7 @@ export default function Dashboard (){
     const handleBall = () => {
         if(numOfBalls === 3){
             setNumOfBalls(0)
+            setNumOfStrikes(0)
         }else {
             setNumOfBalls(numOfBalls + 1)
         }
