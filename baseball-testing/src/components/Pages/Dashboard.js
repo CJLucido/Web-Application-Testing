@@ -55,7 +55,14 @@ export default function Dashboard (){
 
     }
 
- 
+    const handleRunChange = () => {
+        if(numOfRuns == numOfRuns + 1){
+            setNumOfErrors(0)
+        }
+    }
+
+    handleRunChange()
+
     return (
         <div>
             <Display numOfStrikes={numOfStrikes} numOfBalls={numOfBalls} numOfRuns={numOfRuns} numOfErrors={numOfErrors} numOfHits={numOfHits}/>
